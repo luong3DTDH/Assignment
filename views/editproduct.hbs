@@ -9,7 +9,7 @@
     <title>toy-store-edit </title>
     <style>
         body {
-            
+            background-image: url("https://i.ytimg.com/vi/Y55xTh4Dg98/maxresdefault.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: 100% 100%;
@@ -45,22 +45,22 @@
     <article>
         <table width=100% >
     <form action="edit" method="POST">
-    <input type="hidden" name="id" value="{{toy._id}}">
+    <input type="hidden" name="id" value="{{product._id}}">
     <tr>
 
   
-    <td> Name :<input type="text" name="name" value="{{toy.name}}"></td>
+    <td> Name :<input type="text" name="name" value="{{product.name}}"></td>
     </tr>
     <br>
     <tr>
          
-       <td> Type :<input type="text" name="type" id="" value="{{toy.type}}"></td>
+       <td> Type :<input type="text" name="type" id="" value="{{product.type}}"></td>
     </tr>
     <br>
     <tr>
      
     
-   <td>Price : <input type="text" name="price" id="" value="{{toy.price}}"></td>
+   <td>Price : <input type="text" name="price" id="" value="{{product.price}}"></td>
     </tr>
     <td><input type="submit" value="Update"></td>
     </form> 
